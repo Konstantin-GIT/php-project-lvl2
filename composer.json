@@ -9,7 +9,7 @@
     ],
 
     "bin": [    
-    "bin/gendiff"
+      "bin/gendiff"
      ],
   "scripts": {
     "phpcs": "phpcs",
@@ -17,6 +17,7 @@
   },
   "autoload": {
     "files": [
+      "src/gendiff.php"
         ]
   },
   "require": {
