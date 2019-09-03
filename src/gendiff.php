@@ -9,7 +9,7 @@ use function \cli\line;
 
 function run()
 {
-$doc = <<<'DOCOPT'
+    $doc = <<<'DOCOPT'
 Generate diff
 
 Usage:
@@ -21,9 +21,10 @@ Options:
   -v --version                  Show version
 DOCOPT;
 
-$result = \Docopt::handle($doc, array('version'=>'1.0.0rc2'));
-foreach ($result as $k=>$v){
-    echo $k.': '.json_encode($v).PHP_EOL;}
+    $result = \Docopt::handle($doc, array('version' => '1.0.0rc2'));
+    foreach ($result as $k => $v) {
+        echo $k . ': ' . json_encode($v) . PHP_EOL;
+    }
 
     line('Welcome to the Difference calculator');
 }
