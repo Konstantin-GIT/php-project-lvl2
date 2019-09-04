@@ -15,10 +15,15 @@ Generate diff
 Usage:
   gendiff (-h|--help)
   gendiff (-v|--version)
-
+  gendiff [--format <plane>] <firstFile> <secondFile>
+  gendiff [--format <json>] <firstFile> <secondFile>
+  
+  
 Options:
   -h --help                     Show this screen
   -v --version                  Show version
+  --format <plane>              Report format [default: pretty]
+  
 DOCOPT;
 
     $result = \Docopt::handle($doc, array('version' => '1.0.0rc2'));
