@@ -30,7 +30,6 @@ DOCOPT;
     $result = \Docopt::handle($doc, array('version' => '1.0.0rc2'));
     foreach ($result as $k => $v) {
         echo $k . ': ' . json_encode($v) . PHP_EOL;
-
     }
 
     line('Welcome to the Difference calculator');
@@ -41,8 +40,8 @@ DOCOPT;
     $json1 = file_get_contents(__DIR__ . DIRECTORY_SEPARATOR . "{$path1}");
     $json2 = file_get_contents(__DIR__ . DIRECTORY_SEPARATOR . "{$path2}");
 
-    print_r($json1);  
-    print_r($json2);  
+    print_r($json1);
+    print_r($json2);
 
     $str1 = json_decode($json1, true);
     $str2 = json_decode($json2, true);
@@ -50,7 +49,6 @@ DOCOPT;
     $change_str = Diff($str1, $str2);
 
     var_dump($str1);
-    var_dump($str2);   
+    var_dump($str2);
     print_r($change_str);
- 
 }
