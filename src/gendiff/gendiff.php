@@ -46,7 +46,7 @@ DOCOPT;
     $str1 = json_decode($json1, true);
     $str2 = json_decode($json2, true);
 
-    $change_str = Diff($str1, $str2);
+    $change_str = diff($str1, $str2);
 
     var_dump($str1);
     var_dump($str2);

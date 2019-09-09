@@ -1,7 +1,7 @@
 <?php
 namespace Gendiff\Diff;
 
-function Diff(array $data1, array $data2)
+function diff(array $data1, array $data2)
 {
     $keys = array_unique(array_merge(array_keys($data1), array_keys($data2)));
     $result = [];
